@@ -21,6 +21,12 @@ package chapter8;
 		    	   this.departmentName = departmentName; //set department
 			       
 		       }
+		       
+
+		       public String toString()
+		        {
+		            return(super.getName()+ departmentName+ super.getSalary());
+		        }
 		          
 		           
 	

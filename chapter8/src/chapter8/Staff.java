@@ -22,7 +22,11 @@ public class Staff extends UEmployee { //Start of Staff class inherits UEmployee
 					this.jobtitle=  jobtitle;  //Enter your code here
 					
 				  }
-					
+			 public String toString()
+		        {
+		            return(super.getName()+ jobtitle + super.getSalary());
+		        }
+		          
 					
 				
 			}

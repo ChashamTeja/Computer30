@@ -12,15 +12,15 @@ public class UniversityTester {
 		Scanner input = new Scanner(System.in);
 	
 		System.out.println("");
-		System.out.println("Enter employees first name");
+		System.out.println("Enter employees Name:");
 		String name = input.next();
 		
 	
 		
-		System.out.println("Enter employees salary");
+		System.out.println("Enter employees Salary:");
 		int salary = input.nextInt();
 		
-		System.out.println("Enter employee type: Faculty or Staff");
+		System.out.println("Enter employee type: Faculty or Staff :");
 		String EmpType;
 		EmpType = input.next();
 		
@@ -31,14 +31,14 @@ public class UniversityTester {
 			System.out.println("Enter Department name:");
 			String departmentName = input.next();
 			
-			return new Faculty(name, salary , departmentName);
+			return new Faculty("Name:"+ name, salary , "\t Department:"+departmentName);
 		}
 		else
 		{
 			
-			System.out.println("Enter job title");
+			System.out.println("Enter job title:");
 			String jobtitle = input.next();
-			return new Staff(name, salary , jobtitle);
+			return new Staff("Name:"+name,  salary ,"\t Job:" + jobtitle);
 					
   }
 }	
@@ -51,7 +51,7 @@ public class UniversityTester {
 			emp1 = assign();
 			
 			
-			System.out.println("University Employees:");
+			System.out.println("University Employees:/t/t/t/t");
 			System.out.println(emp1);
 		
   }	
