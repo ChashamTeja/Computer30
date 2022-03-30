@@ -2,20 +2,24 @@ package chapter8;
 
 public abstract class Vehicle { //Start of abstract superclass Vehicle
 	
-	private String manufacturer="";//Create members variable for manufacturer and colour of type string.
+	private String manufacturer;//Create members variable for manufacturer and colour of type string.
 
 
-	private String colour = "";
+	private String colour ;
 	
 	private double speed = 0.0;
+	
+	private int seats=0;
 
-public Vehicle(String manufacturer, String color,double speed) { //Vehicle constructor which takes i manufacturer
+public Vehicle(String manufacturer, String colour,double speed,int seats) { //Vehicle constructor which takes i manufacturer
 
 	this.manufacturer = manufacturer;
 
 	this.colour = colour;
 	
 	this.speed = speed;
+	
+	this.seats=seats;
 }
 
 	public String getManufacturer() {//Gets the manufacturer
@@ -29,11 +33,11 @@ public Vehicle(String manufacturer, String color,double speed) { //Vehicle const
 		this.manufacturer = manufacturer;
 	}
 
-	public String getColor() { //Gets the color of the vehicle
+	public String getColour() { //Gets the color of the vehicle
 	
 		return this.colour;
 	}
-	public void setColor(String color) { //Sets the color of the vehicle
+	public void setColour(String color) { //Sets the color of the vehicle
 	
 		this.colour = colour;
 	}
@@ -45,14 +49,29 @@ public Vehicle(String manufacturer, String color,double speed) { //Vehicle const
 		
 		return speed;
 	}
+public void setseats(int seats) { //Sets the color of the vehicle
+		
+		this.seats = seats;
+	}
+	public int getseats() {
+		
+		return seats;
+	}
+	
 	
 
 	
 	public String toString() {
 		
-		String vehicleString = "Manufacturer: " + manufacturer + "\nSpeed: " + speed + "\nColor: " + colour;
+		String vehicleString = "Model: " + manufacturer + "\nSpeed: " + speed + "\nColor: " + colour+"\nSeats:"+seats;
 		return vehicleString;
 	}
+	
+	public abstract String honk();
+	public abstract String Convertible();
+	public abstract String NotConvertible();
+	public abstract String Automatic();
+	public abstract String notAutomatic();
 	
 	
 	}

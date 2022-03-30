@@ -4,35 +4,60 @@ public class Truck extends Vehicle {
 	
 	private String truckload;
 	
-	public Truck(String manu, String color, String truckload ,double speed ) {
+	public Truck(String manufacturer, String colour,double speed ,int seats,String truckload ) {
 		
-		super(manu, color , speed); //Car constructor // initialize manufacturer(i.e manu) and colour(i.e. color) to superclass vehicle
+		super(manufacturer , colour ,speed,seats); //constructor // initialize manufacturer and colour to superclass vehicle
+		
 		this.truckload = truckload;
 	
 	
 	}
-	public String gettruckload() { //Gets job
+	public String gettruckload() { 
 		
-		return truckload; //Enter your code here
+		return truckload; 
 		}
 		
-	public void settruckload(String truckload) { //Sets job
+	public void settruckload(String truckload) { 
 			
-			this.truckload=  truckload;  //Enter your code here
+			this.truckload=  truckload;  
 			
 		  }
-	public String sound() { //returns the sound of a car "Vroom Vroom"
-		return sound();
-		}
-		
-	public String vehicleType() { //returns the vehicle type "Car"
-    return vehicleType();
-		}
+	
 	 public String toString()
         {
-            return(super.getManufacturer()+ truckload + super.getColor() + this.sound() + this.vehicleType());
+		 return("Model:"+ super.getManufacturer()+"\nTop speed:"+super.getSpeed()+ "\nColour:" + super.getColour() +"\nSeats:"+ super.getseats() +"\ntruck load:"+ this.truckload );
         }
-          
+	 @Override
+		public String honk() 
+		{
+			return "Beep Beep";
+			
+		}
+
+		@Override
+		public String Convertible() {
+			
+			return "Truck is convertible";
+		}
+
+		@Override
+		public String Automatic() {
+			// TODO Auto-generated method stub
+			return "Truck is Automatic";
+		}
+		
+
+		@Override
+		public String NotConvertible() {
+			// TODO Auto-generated method stub
+			return "Truck is not convertible";
+		}
+
+		@Override
+		public String notAutomatic() {
+			// TODO Auto-generated method stub
+			return "Truck is not Automatic";
+		}
 	
 }
 
