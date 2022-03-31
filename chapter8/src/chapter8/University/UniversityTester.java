@@ -47,19 +47,19 @@ public class UniversityTester {
 		public static void main(String[] args) {
 			
 			UEmployee emp1;
-			UEmployee emp2;
-			UEmployee emp3;
+			//UEmployee emp2;
+			//UEmployee emp3;
 		
 			emp1 = assign();
-			emp2 = assign();
-			emp3 = assign();
+			//emp2 = assign();
+			//emp3 = assign();
 			
 			
 			
 			System.out.println("University Employees:\t\t\t\t");
 			System.out.println(emp1);
-			System.out.println(emp2);
-			System.out.println(emp3);
+			//System.out.println(emp2);
+			//System.out.println(emp3);
 		
   }	
 }
