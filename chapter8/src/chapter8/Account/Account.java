@@ -3,7 +3,7 @@ package chapter8.Account;
 import java.text.NumberFormat;
 
 public class Account {
-	private double balance;
+	private double balance;//double variable balance 
 	private Customer cust;
 		
 	
