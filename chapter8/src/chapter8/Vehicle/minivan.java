@@ -1,5 +1,4 @@
-package chapter8;
-
+package chapter8.Vehicle;
 public class minivan extends Vehicle {
 	
 	private String luggage;

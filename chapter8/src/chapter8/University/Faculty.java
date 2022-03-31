@@ -1,4 +1,4 @@
-package chapter8;
+package chapter8.University;
 
 	public class Faculty extends UEmployee { //Start of Faculty class which inheritsUEmployee
 	

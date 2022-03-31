@@ -1,4 +1,4 @@
-package chapter8;
+package chapter8.Vehicle;
 
 public class Truck extends Vehicle {
 	

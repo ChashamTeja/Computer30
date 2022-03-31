@@ -10,7 +10,7 @@ School: CHHS
 Course: Computer Programming 30
  
 */
-package chapter8;
+package chapter8.University;
 
 public class UEmployee {
 	
