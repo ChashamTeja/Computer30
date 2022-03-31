@@ -12,16 +12,17 @@ public class Staff extends UEmployee { //Start of Staff class inherits UEmployee
 		
 		this.jobtitle = jobtitle;//sets departmentName to it's member variable department name
 	}
-			public String getJobtitle() { //Gets job
+			public String getJobtitle() { //Gets job title
 				
-				return jobtitle; //Enter your code here
+				return jobtitle; //return job title
 				}
 				
-			public void setJobtitle(String jobtitle) { //Sets job
+			public void setJobtitle(String jobtitle) { //Sets job title
 					
-					this.jobtitle=  jobtitle;  //Enter your code here
+					this.jobtitle=  jobtitle;  
 					
 				  }
+			//return toString to display the info
 			 public String toString()
 		        {
 		            return(super.getName()+ jobtitle + super.getSalary());
