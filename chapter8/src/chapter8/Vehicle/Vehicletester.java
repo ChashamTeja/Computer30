@@ -9,10 +9,14 @@ public class Vehicletester  {
 	 
 	public static void main(String args[]){
 		
+		//added scanner program to get info form the user 
 		Scanner input = new Scanner(System.in);
 		
+		//print the available options for the user to choose from
 		System.out.println(" \n 1.Car \n2.Minivan \n 3.Truck \nChoose vehicle type :");
 		String sel=input.next();
+		
+		//if statement to display the components  of the car class if car is selected form the user 
 		if(sel.equals("car")) {
 			Car car1 = new Car("Rolls royce Wraith", "White", 155, 5, "6.6 L V12", "Bulletproof");
 			Car car2 = new Car("2022 Mustang gt ", "Yellow", 250, 2, "5.0-liter V8", "Not Bulletproof");

@@ -1,31 +1,33 @@
 package chapter8.Vehicle;
+
+//connects minivan class to super class vehicle
 public class minivan extends Vehicle {
 	
-	private String luggage;
+	private String luggage;//private string for minivan class 
  
 	public  minivan (String manufacturer, String colour,double speed ,int seats,String luggage) {
 		
-		super(manufacturer , colour ,speed,seats); //Car constructor // initialize manufacturer(i.e manu) and colour(i.e. color) to superclass vehicle
+		super(manufacturer , colour ,speed,seats); //Car constructor // initialize manufacturer ,colour,speed and seats  to superclass vehicle
 		this.luggage = luggage;
 	
 	
 	}
-	public String getluggage() { //Gets job
-		return luggage; //Enter your code here
+	public String getluggage() { //Gets luggage from the user 
+		return luggage; 
 		}
 		
-	public void setluggage(String luggage) { //Sets job
+	public void setluggage(String luggage) { //Sets luggage value
 			
-			this.luggage= luggage;  //Enter your code here
+			this.luggage= luggage;  
 			
 		  }
-	
+	//return the all the variables 
 	 public String toString()
         {
 		 return("Model:"+ super.getManufacturer()+"\nTop speed:"+super.getSpeed()+ "\nColour:" + super.getColour() +"\nSeats:"+ super.getseats() +"\nLuggage Space"+luggage );
         }
 	
-	 
+	 //given different values to all the abstract classes 
 	 
 	 public String honk() 
 		{
