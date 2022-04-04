@@ -1,15 +1,30 @@
+/*
+Program: Car.java          Last Date of this Revision: March 5 , 2022
+
+
+
+Purpose: Create a Vehicle class that is an abstract class defining the general details and actions associated with
+a vehicle. Create Car, Truck, and Minivan classes that inherit the Vehicle class. The Car, Truck, and
+Minivan classes should include additional members specific to the type of vehicle being represented.
+Create client code to test the classes
+
+Author: Chashampreet Teja, 
+School: CHHS
+Course: Computer Programming 30
+ 
+*/
 package chapter8.Vehicle;
 
 public class Car extends Vehicle  {
 	
-	private String  engine ;
+	private String  engine ;//additional feature string only for car class
 	
-	private String  bulletproof ;//Create member variable convertible of type boolean
+	private String  bulletproof ;//additional feature string only for car class
 	
 	
 	public Car(String manufacturer, String colour,double speed ,int seats,String engine,String bulletproof ) {
 		
-		super(manufacturer , colour ,speed,seats);
+		super(manufacturer , colour ,speed,seats);//Car constructor // initialize manufacturer ,colour,speed and seats  to superclass vehicle
 		this.bulletproof = bulletproof;
 		this.engine = engine;
 		
@@ -17,17 +32,17 @@ public class Car extends Vehicle  {
 
 	}
 	
-	public String getbulletproof() {
+	public String getbulletproof() { //gets bulletproof 
 		return bulletproof;
 	}
-	public void setbulletproof(String bulletproof) {
+	public void setbulletproof(String bulletproof) { //sets bulletproof 
 		this.bulletproof = bulletproof;
 		
 }
-	public String getengine() {
+	public String getengine() { // get engine name
 		return engine;
 	}
-	public void setengine(String engine) {
+	public void setengine(String engine) { // set engine name 
 		this.engine = engine;
 		
 }
@@ -37,13 +52,15 @@ public class Car extends Vehicle  {
 	
 	
 	
-	 
+	//return the all the variables 
 		
 	 public String toString()
      {
          return("Model:"+ super.getManufacturer()+"\nTop speed:"+super.getSpeed()+ "\nColour:" + super.getColour() +"\nEngine:"+this.getengine()+"\nSeats:"+ super.getseats() + "\nAdditional:"+ this.bulletproof );
      }
-
+	
+	 
+	 //given different values to all the abstract classes 
 	@Override
 	public String honk() 
 	{

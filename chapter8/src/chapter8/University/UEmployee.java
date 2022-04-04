@@ -1,6 +1,7 @@
 /*
 Program: Uemployee.java          Last Date of this Revision: March 5 , 2022
 
+
 Purpose: Create a UEmployee class that contains member variables for the university employee name and salary.
 The UEmployee class should contain member methods for returning the employee name and salary.
 Create Faculty and Staff classes that inherit the UEmployee class. 
@@ -35,11 +36,11 @@ public class UEmployee {
 		    public double getSalary() { //Gets the Salary
 				return salary;
 				}
-		    public void setName(String name) {
+		    public void setName(String name) {//sets name 
 			this.name=name;
 			
 			}
-		    public void setSalary(double salary) {
+		    public void setSalary(double salary) {//sets salary 
 				this.salary=salary;
 				
 				}

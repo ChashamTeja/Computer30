@@ -1,6 +1,7 @@
 /*
 Program: divisbleby3.java          Last Date of this Revision: February 20, 2022
 
+
 Purpose: Create a DivisibleBy3 application that prompts the user for an integer and then displays a message when
 Check is clicked indicating whether the number is divisible by 3
 
