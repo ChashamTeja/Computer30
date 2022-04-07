@@ -26,12 +26,12 @@ public class Puck extends Disk {
 		weight = w;
 	}
 	
-	public void setWeight(double newW)
+	public void setWeight(double newW) //set weight of the puck
 	{
 		weight = newW;
 	}
 	
-	public double getWeight()
+	public double getWeight() // get weight
 	{
 		return(weight);
 	}
