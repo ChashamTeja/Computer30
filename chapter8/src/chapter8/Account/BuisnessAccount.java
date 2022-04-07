@@ -15,23 +15,85 @@ Course: Computer Programming 30
 */
 package chapter8.Account;
 
+//extend businessAccount  to account class
 public class BuisnessAccount extends Account {
-	private final int w=10;
 
-	public BuisnessAccount(double bal, String fName, String lName, String str, String city, String st, String zip,int f) {
-		super(bal, fName, lName, str, city, st, zip);// initialize bal, fName, lName, str, city, stand zip   to superclass account
-		// TODO Auto-generated constructor stub
-		f=w;
+	private double MIN = 500;
+
+
+
+	public BuisnessAccount(double bal) {
+
+		super(bal, null, null, null, null, null, null);//connect constructor to super class s
+
+
+
 	}
-	
-	public void withdraw(double y)
-	{
-		if (super.getBalance()>=y) {
-			super.deposit(super.getBalance()-y);
+
+
+
+	public void withdrawal(double amt) {
+
+		// We have access to getBalance already because it is a type of Account.
+
+		double balance = getBalance();
+
+
+
+		if (amt <= balance) {
+
+			// Call to our base to withdrawal
+
+			super.withdrawal(amt);
+
+
+
+			// Withdrawal another 2 if it is lower than the minimum
+
+			if (getBalance() < MIN) {
+
+				super.withdrawal(10.00);
+
+			}
+
+		} else {
+
+			System.out.println("Not enough money in account.");
+
 		}
-		else {
-			super.deposit(super.getBalance()-y-w);
-		}
+
 	}
-	
+
+
+     // get balance after withdrawal 
+	public boolean equals(BuisnessAccount p) {
+
+
+
+		if (p.getBalance() == super.getBalance()) {
+
+			return (true);
+
+		} else {
+
+			return (false);
+
+		}
+
+	}
+
+
+    //return string 
+	public String toString() {
+
+		String businessacctString;
+
+
+        
+		businessacctString = "The balance is " + super.getBalance();
+
+		return (businessacctString);
+
+	}
+
 }

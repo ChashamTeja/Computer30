@@ -19,7 +19,7 @@ import java.text.NumberFormat;
 
 public class Account {
 	private double balance;//double variable balance 
-	private Customer cust;
+	protected Customer cust;
 		
 	
 	/**
@@ -79,7 +79,7 @@ public class Account {
 		NumberFormat money = NumberFormat.getCurrencyInstance();
 
 		accountString = cust.toString();
-		accountString += "Current balance is " + money.format(balance);
+		accountString += "Current balance is " + money.format(balance)+cust.toString();
 	 	return(accountString);
 	}
 }
