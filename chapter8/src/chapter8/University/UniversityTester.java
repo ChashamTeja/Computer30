@@ -21,66 +21,59 @@ public class UniversityTester {
 
 	
 	
-	public static UEmployee assign() {
-		//scanner function to get info from the user 
+	public static void main(String args[]){
+		
+	
 		Scanner input = new Scanner(System.in);
+		
+		//print the available options for the user to choose from
+		System.out.println(" \n 1.Faculty member 2.Staff member :");
+		
+        String sel=input.next();
+        if(sel.equals("1")) {
+        	
+        	
+        	Faculty new1 = new Faculty("Teja ", 2131, "sddd");
+        	Faculty new2 = new Faculty("\n\nTeja ", 21312312, "sddd");
+        	Faculty new3 = new Faculty("\n\nTeja ", 21312312, "sddd");
+        	
+    		System.out.println(new1);
+    		System.out.println(new2);
+    		System.out.println(new3);
+    		
+        }
+    		else if(sel.equals("2")) {
+    			
+    			Staff s1 = new Staff("asdasdas ", 2131, "sdasdas");
+    			Staff s2 = new Staff(sel, 0, sel);
+    			Staff s3 = new Staff(sel, 0, sel);
+    			
+            
+            	
+        		System.out.println(s1);
+        		System.out.println(s2);
+        		System.out.println(s3);
+        		
+        	
+    		}        	
+        	
+        	
+        	
+        	
+        	
+        }
+    
 	
-		System.out.println("");
-		System.out.println("Enter employees Name:");
-		String name = input.next();//name string to set the given name 
-		
+	}
 	
-		
-		System.out.println("Enter employees Salary:");
-		int salary = input.nextInt();// salary string to set the provided salary 
-		
-		//ask teh user if the employee is either staff or faculty 
-		System.out.println("Enter employee type: Faculty or Staff :");
-		String EmpType;
-		EmpType = input.next();//
-		
-		
-		//if employee is faculty member ask for the department name 
-		if(EmpType.equalsIgnoreCase("Faculty")) {
-			
-			System.out.println("Enter Department name:");
-			String departmentName = input.next();
-			
-			//return the employee info in faculty 
-			return new Faculty("Name:"+ name, salary , "\t Department:"+departmentName + ",\t Salary=");
-		}
-		//if employee is Staff member ask for the jobtitle name 
-		else
-		{
-			//return the employee info in staff 
-			System.out.println("Enter job title:");
-			String jobtitle = input.next();
-			return new Staff("Name:"+name  , salary ,  "\t Job:" + jobtitle + "\t Salary=");
-					
-  }
-}	
 	
-	//adding main class and employees 
-		public static void main(String[] args) {
-			// display all the employees
-			UEmployee emp1;
-			UEmployee emp2;
-			UEmployee emp3;
-		
-			emp1 = assign();
-			emp2 = assign();
-			emp3 = assign();
-			
-			
-			
-			System.out.println("University Employees:\t\t\t\t");
-			System.out.println(emp1);
-			System.out.println(emp2);
-			System.out.println(emp3);
-		
-  }	
-}
+	
 
+
+
+	
+	
+	     
 /* Screen Dump
 Enter employees Name:
 James

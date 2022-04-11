@@ -45,6 +45,12 @@ public class UEmployee {
 				
 				}
 		    
+		    public String toString() {
+				
+				String empString = name + salary ;
+				return empString;
+			}
+		    
 
 }
 

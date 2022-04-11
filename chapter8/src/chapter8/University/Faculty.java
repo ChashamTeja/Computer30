@@ -39,7 +39,7 @@ package chapter8.University;
 
 		       public String toString()//return strings 
 		        {
-		            return(super.getName()+ departmentName+ super.getSalary());
+		            return("Name:"+super.getName()+"\nDepartmentName:"+ departmentName+ "\nSalary:"+super.getSalary());
 		        }
 		          
 		           
