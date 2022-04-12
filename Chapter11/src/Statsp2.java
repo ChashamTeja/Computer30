@@ -16,16 +16,25 @@ public class Statsp2 {
         FileWriter out;
         BufferedWriter writeFile;
         Scanner sc = new Scanner(System.in);
+        
+        //made string for name and gardes
         String fileName;
         String studentName;
         String studentGrade;
+       
         int numberOfGrades;
+        
+        //promote user to make a file name 
         System.out.print("Enter File Name : ");
+       
         fileName = sc.nextLine();
         dataFile = new File(fileName);
+         
+        //asks the user to the total number of students 
         System.out.print("Enter The Number Of Students Grades That Will Be Entered : ");
         numberOfGrades = Integer.parseInt(sc.nextLine());
-
+       
+        //read file
         try {
             out = new FileWriter(dataFile, true);
             writeFile = new BufferedWriter(out);
@@ -40,13 +49,14 @@ public class Statsp2 {
                 writeFile.write(studentGrade);
                 writeFile.newLine();
             }
+            //check the file for errors
             writeFile.close();
             out.close();
             System.out.println("Data Written to a file.");
             System.out.println("");
         } catch (IOException e) {
-            System.out.println("Problem Writing To file.");
-            System.out.println("iOException : " + e.getMessage());
+	            System.out.println("Problem Writing To file.");
+	            System.out.println("iOException : " + e.getMessage());
         }
 
         //Reading From A File
@@ -70,6 +80,8 @@ public class Statsp2 {
                 System.out.println(name + " " + score);
                 totalScores += score2;
                 numScores += 1;
+               
+                // calculate the highest and lowest score 
                 if (minScore > score2) {
                     minScore = score2;
                 }
@@ -79,7 +91,7 @@ public class Statsp2 {
                 }
 
             }
-
+            // Display average ,lowest and highest score to the user 
             avgScore = totalScores / numScores;
 
             System.out.println("Lowest score = " + minScore);
@@ -91,13 +103,16 @@ public class Statsp2 {
             readFile.close();
 
             in.close();
-
+           
+            
+            // show errors if file is not found 
         } catch (FileNotFoundException e) {
 
             System.out.println("File does not exist or could not be found.");
 
             System.err.println("FileNotFoundException: " + e.getMessage());
-
+        
+            //problem reading files form the user 
         } catch (IOException e) {
 
             System.out.println("Problem reading file.");
@@ -109,4 +124,21 @@ public class Statsp2 {
 
 }
 
+/* Screen Dump
+Enter File Name : data5
+Enter The Number Of Students Grades That Will Be Entered : 2
+Enter Student Name : Jerry
+Enter Test Scores : 79
+Enter Student Name : tom
+Enter Test Scores : 89
+Data Written to a file.
 
+Jerry 79
+tom 89
+Lowest score = 79.0
+Highest score = 89.0
+Average = 84.0
+
+
+
+ */

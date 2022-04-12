@@ -13,7 +13,7 @@ public class Statsp1 {
 
   	
 
-    File dataFile = new File("data.dat");
+    File dataFile = new File("C:\\Users\\1100023209\\Documents\\test2.dat");
 
     FileReader in;
 
@@ -106,3 +106,15 @@ public class Statsp1 {
    
 
 }
+/* Screen Dump
+Tom 89
+Jerry 77
+kabir 98
+Harjot 79
+Jaskaran 68
+Lowest score = 68.0
+Highest score = 98.0
+Average = 82.2
+
+
+ */
