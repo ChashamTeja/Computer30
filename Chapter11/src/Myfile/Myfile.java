@@ -1,4 +1,6 @@
- import java.io.*;
+package Myfile;
+
+import java.io.*;
  
  import java.util.Scanner;
  public class Myfile {

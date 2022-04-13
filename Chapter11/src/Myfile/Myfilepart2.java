@@ -1,7 +1,11 @@
+package Myfile;
+
 import java.io.*;
 import java.util.Scanner;
+
 public class Myfilepart2 {
-public static void main(String[] args) {
+
+	public static void main(String[] args) {
 
 	File textFile = new File("C:\\Users\\1100023209\\Documents\\zzz.txt");
 
