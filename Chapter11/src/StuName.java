@@ -5,7 +5,7 @@ public class StuName implements Serializable {
 	/**
 	 * This id is used in the serialization process across different platforms.
 	 */
-	private static final long serialVersionUID = -6859744685824631220L;
+	
 	
 	//Attributes/ Fields
 	private String firstName;
@@ -67,7 +67,7 @@ public class StuName implements Serializable {
 
 	@Override
 	public String toString() {
-		return String.format(firstName, lastName);
+		return (firstName+ " " + lastName);
 	}
 
 	
