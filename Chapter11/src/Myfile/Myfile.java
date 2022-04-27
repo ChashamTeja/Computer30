@@ -1,27 +1,29 @@
 package Myfile;
 
 import java.io.*;
+
  
  import java.util.Scanner;
  public class Myfile {
  
 	 public static void main(String[] args) {
 		 
-
-	       	 System.out.println("Enter file location: \n");
+		     Scanner input = new Scanner(System.in);
+	       	
+		     System.out.println("Enter file location: \n");
 		        // variable to store the read file name given in the console
-		        String fileToOpen;
+		     String f20=input.next();
+				
 		        
 		        // Variable to store file given in the console
 		        File file;
 		        
-		        // Read input from the keyboard
+		      
 		        
-		        Scanner s = new Scanner(System.in);
-		        fileToOpen = s.next();
+		       
 		        // Assing our file the file given in the console
 		       
-		        file = new File(fileToOpen);
+		        file = new File(f20);
 		        // check if the file exists
 		       
 		        if (file.exists()) {
