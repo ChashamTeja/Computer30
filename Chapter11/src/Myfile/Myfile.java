@@ -12,18 +12,19 @@ import java.io.*;
 	       	
 		     System.out.println("Enter file location: \n");
 		        // variable to store the read file name given in the console
+		     
 		     String f20=input.next();
 				
 		        
-		        // Variable to store file given in the console
+		        // Variable to store file 
+		       
 		        File file;
 		        
 		      
-		        
-		       
 		        // Assing our file the file given in the console
 		       
 		        file = new File(f20);
+		       
 		        // check if the file exists
 		       
 		        if (file.exists()) {

@@ -1,6 +1,7 @@
 package Myfile;
 
 import java.io.*;
+
 import java.util.Scanner;
 
 public class Myfilepart2 {
@@ -30,44 +31,54 @@ public class Myfilepart2 {
 
 		}//end catch
 }//end else
-		Scanner SC=new Scanner(System.in);
+		Scanner input=new Scanner(System.in);
 		
 		//prompt the user to type D to delete file
 		System.out.println("\n Type D to delete the file. Type any other character to keep the file: ");
 		
 		//input stored in CH
-		char CH=SC.next().charAt(0);
+	
+		String del=input.next();
 		
 		
 		//if CH is D
-		if(CH=='D')
+		if(del.equals("D"))
 {
  
-			if(textFile.delete())//if file is deleted successfully
+			textFile.delete();//if file is deleted successfully
        
-			{
+			
            
-				System.out.println("File deleted successfully");
+			System.out.println("File deleted successfully");
        
 			}
-       
-			else
-       
-			{
-           
-				System.out.println("Failed to delete the file");
-       
-			}  
-}
-
-		else//if CH is not D
-
-		{
-  
-			System.out.println("File kept because you did not type D");
-
+		
+		else {
+			
+			System.out.println("File was not deletedd");
+			
 		}
+		
+		
+			
+
+
+       
+			 
+
 
 
      }//end main
 }//end class
+
+
+/* Screen Dump
+ *  
+File already exists.
+
+ Type D to delete the file. Type any other character to keep the file: 
+D
+File deleted successfully
+
+ */
+
