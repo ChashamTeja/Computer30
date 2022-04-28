@@ -1,3 +1,18 @@
+/*
+Program: Myfilepart2.java          Last Date of this Revision: March 5 , 2022
+
+
+
+
+Purpose: Create a MyFile application that creates a file named zzz.txt and then displays a message indicating that the
+file has been created. The application should prompt the user to either keep or delete the file. If the file is
+deleted, a message should notify the user when the file has been successfully deleted.
+
+Author: Chashampreet Teja, 
+School: CHHS
+Course: Computer Programming 30
+ 
+*/
 package Myfile;
 
 import java.io.*;

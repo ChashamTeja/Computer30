@@ -1,3 +1,19 @@
+/*
+Program: roster.java          Last Date of this Revision: March 5 , 2022
+
+
+
+
+Purpose: Create a Roster application that prompts the user for the name of the file to store student names and then
+prompts the user for the number of students in a class. The application should then prompt the user for
+the first and last name of each student and write this data to a file.
+
+Author: Chashampreet Teja, 
+School: CHHS
+Course: Computer Programming 30
+ 
+*/
+
 package roster;
 
 //import the required packages

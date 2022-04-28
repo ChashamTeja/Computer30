@@ -3,6 +3,7 @@ Program: truck.java          Last Date of this Revision: March 5 , 2022
 
 
 
+
 Purpose: Create a Vehicle class that is an abstract class defining the general details and actions associated with
 a vehicle. Create Car, Truck, and Minivan classes that inherit the Vehicle class. The Car, Truck, and
 Minivan classes should include additional members specific to the type of vehicle being represented.

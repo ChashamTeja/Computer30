@@ -1,4 +1,22 @@
-package Stats;
+/*
+Program: Statsp1.java          Last Date of this Revision: March 5 , 2022
+
+
+
+
+Purpose: Create a Stats application that reads names and scores from a data file named test1.dat, supplied with this
+text. The file contains a student name on one line followed by the student’s test score on the next line. The
+Stats application should read and display each name and score. After all the scores have been displayed, the
+lowest score, highest score, and average score should be displayed
+
+
+Author: Chashampreet Teja, 
+School: CHHS
+Course: Computer Programming 30
+ 
+*/package Stats;
+
+
 
 
 import java.util.Scanner;

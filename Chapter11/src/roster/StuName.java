@@ -1,3 +1,18 @@
+/*
+Program: Stuname.java          Last Date of this Revision: March 5 , 2022
+
+
+
+
+Purpose: Create a StuName class that has
+member variables firstName and lastName and a toString() member method.
+
+Author: Chashampreet Teja, 
+School: CHHS
+Course: Computer Programming 30
+ 
+*/
+
 package roster;
 
 import java.io.Serializable;

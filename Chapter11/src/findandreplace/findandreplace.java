@@ -1,3 +1,17 @@
+/*
+Program: findandreplace.java          Last Date of this Revision: april 15 , 2022
+
+
+
+
+Purpose: Create a FindAndReplace application that prompts the user for a file name, a search word or phrase,
+and a replacement word or phrase.
+
+Author: Chashampreet Teja, 
+School: CHHS
+Course: Computer Programming 30
+ 
+*/
 package findandreplace;
 
 import java.io.BufferedWriter;
