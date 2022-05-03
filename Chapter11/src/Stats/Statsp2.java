@@ -94,8 +94,10 @@ public class Statsp2 {
             in = new FileReader(dataFile);
             readFile = new BufferedReader(in);
             while ((name = readFile.readLine()) != null) {
-                score = readFile.readLine();
+              
+            	score = readFile.readLine();
                 score2 = Double.parseDouble(score);
+               
                 System.out.println(name + " " + score);
                 totalScores += score2;
                 numScores += 1;
