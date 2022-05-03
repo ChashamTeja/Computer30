@@ -22,6 +22,7 @@ Course: Computer Programming 30
 import java.util.Scanner;
 
 import java.io.*;
+import java.text.NumberFormat;
 
 
 
@@ -31,7 +32,7 @@ public class Statsp1 {
 
   public static void main(String[] args) {
 
-  	
+  	NumberFormat nf = NumberFormat.getPercentInstance();
 
     File dataFile = new File("C:\\Users\\1100023209\\Documents\\test2.dat");
 
@@ -57,37 +58,37 @@ public class Statsp1 {
 
     try {
 
-      in = new FileReader(dataFile);
-
-      readFile = new BufferedReader(in);
-
-      while ((name = readFile.readLine()) != null ) { 
-
-          
-
-        score = readFile.readLine();  
-
-        score2 = Double.parseDouble(score); 
-
-        System.out.println(name + " " + score);   
-
-        totalScores += score2;  
-
-        numScores += 1;     
-
-        if(minScore > score2)   
-
-          minScore = score2;
-
-        if(maxScore < score2)  
-
-          maxScore = score2;
+	      in = new FileReader(dataFile);
+	
+	      readFile = new BufferedReader(in);
+	
+	      while ((name = readFile.readLine()) != null ) { 
+	
+	          
+	
+	        score = readFile.readLine();  
+	
+	        score2 = Double.parseDouble(score); 
+	
+	        System.out.println(name + " " + score);   
+	
+	        totalScores += score2;  
+	
+	        numScores += 1;     
+	
+	        if(minScore > score2)   
+	
+	          minScore = score2;
+	
+	        if(maxScore < score2)  
+	
+	          maxScore = score2;
 
       }
 
       avgScore = totalScores / numScores;       
 
-      System.out.println("Lowest score = " + minScore);
+      System.out.println("Lowest score = " + nf.format(minScore/100));
 
       System.out.println("Highest score = " + maxScore);
 

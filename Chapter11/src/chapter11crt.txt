@@ -1,4 +1,4 @@
-1.ata on non-volatile storage media is stored in named locations on the media called files. By reading and writing files, programs can save information between program runs.
+1.data on non-volatile storage media is stored in named locations on the media called files. By reading and writing files, programs can save information between program runs.
 2.import java.io.*;
 3.we need double \\ to locate a file
 4.a)The try statement identifies a block of statements within which an exception might be thrown. The catch statement must be associated with a try statement and identifies a block of statements that can handle a 

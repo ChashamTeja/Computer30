@@ -47,16 +47,16 @@ public class findandreplace {
         
         // find file 
         try {
-            FileWriter fileOut = new FileWriter(destination);
-            BufferedWriter bw = new BufferedWriter(fileOut);
-            Scanner fileRead = new Scanner(new File(source));
-           
-            //find the word
-            
-            while (fileRead.hasNextLine()) {
-                String data = fileRead.nextLine();
-                bw.write(data.replace(search, replacementWord));
-                bw.newLine();
+	            FileWriter fileOut = new FileWriter(destination);
+	            BufferedWriter bw = new BufferedWriter(fileOut);
+	            Scanner fileRead = new Scanner(new File(source));
+	           
+	            //find the word
+	            
+	            while (fileRead.hasNextLine()) {
+	                String data = fileRead.nextLine();
+	                bw.write(data.replace(search, replacementWord));
+	                bw.newLine();
             }
             //replace data 
             bw.flush();

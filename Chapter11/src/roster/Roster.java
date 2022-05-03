@@ -68,10 +68,11 @@ public static void main(String[] args)
 		writeStu = new ObjectOutputStream(out);
 		
 		for (int i = 1; i <= numStudents; i++) {
-
+            
+			//prompt user to enter name of user 
 			System.out.print("\nEnter first name of student " + i + ": ");
 			firstName = scanner.nextLine();
-
+			//prompt user to enter last name of user
 			System.out.print("Enter last name of student " + i + ": ");
 			lastName = scanner.nextLine();
 
@@ -125,6 +126,12 @@ public static void main(String[] args)
 
 /* Screen Dump
 
+Enter file name: data1.txt
+Enter number of students: 1
 
+Enter first name of student 1: swdsda
+Enter last name of student 1: dasdasdasd
+Data has been written to the file
+swdsda dasdasdasd
 
  */

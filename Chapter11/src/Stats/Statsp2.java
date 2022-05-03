@@ -91,25 +91,25 @@ public class Statsp2 {
 
         try {
 
-            in = new FileReader(dataFile);
-            readFile = new BufferedReader(in);
-            while ((name = readFile.readLine()) != null) {
-              
-            	score = readFile.readLine();
-                score2 = Double.parseDouble(score);
-               
-                System.out.println(name + " " + score);
-                totalScores += score2;
-                numScores += 1;
-               
-                // calculate the highest and lowest score 
-                if (minScore > score2) {
-                    minScore = score2;
-                }
-
-                if (maxScore < score2) {
-                    maxScore = score2;
-                }
+	            in = new FileReader(dataFile);
+	            readFile = new BufferedReader(in);
+	            while ((name = readFile.readLine()) != null) {
+	              
+	            	score = readFile.readLine();
+	                score2 = Double.parseDouble(score);
+	               
+	                System.out.println(name + " " + score);
+	                totalScores += score2;
+	                numScores += 1;
+	               
+	                // calculate the highest and lowest score 
+	                if (minScore > score2) {
+	                    minScore = score2;
+	                }
+	
+	                if (maxScore < score2) {
+	                    maxScore = score2;
+	                }
 
             }
             // Display average ,lowest and highest score to the user 
