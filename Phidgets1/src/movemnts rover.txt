@@ -1,0 +1,37 @@
+forward -
+
+        leftMotors.setTargetVelocity(1);
+        rightMotors.setTargetVelocity(-1);
+
+
+
+backwards-
+      leftMotors.setTargetVelocity(-1);
+        rightMotors.setTargetVelocity(1);
+
+
+
+right-
+
+        leftMotors.setTargetVelocity(1);
+        rightMotors.setTargetVelocity(1);
+        
+        
+
+        
+        Thread.sleep(630);
+
+left-
+ leftMotors.setTargetVelocity(-1);
+        rightMotors.setTargetVelocity(-1);
+        
+        
+
+        
+        Thread.sleep(630);
+
+180-
+
+
+
+spin-
