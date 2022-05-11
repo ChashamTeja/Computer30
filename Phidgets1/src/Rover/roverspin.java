@@ -13,29 +13,31 @@ public class roverspin {
         DCMotor rightMotors = new DCMotor();
 
         //Address
-        leftMotors.setChannel(1);
-        rightMotors.setChannel(0);
-
-        //Open
-        leftMotors.open(5000);
-        rightMotors.open(5000);
-
-        //Turn in one direction
-        leftMotors.setTargetVelocity(1);
-        rightMotors.setTargetVelocity(-1);
-
-     Thread.sleep(2000);
-       
-     //Address
         leftMotors.setChannel(0);
         rightMotors.setChannel(1);
 
         //Open
-        leftMotors.open(5000);
-        rightMotors.open(5000);
-
+        leftMotors.open(8000);
+        rightMotors.open(8000);
+       
+        Thread.sleep(1000);
+        
+        
+        //Turn in one direction
+        leftMotors.setTargetVelocity(1);
+        rightMotors.setTargetVelocity(-1);
+        
+        
         //Turn in one direction
         leftMotors.setTargetVelocity(0);
+        rightMotors.setTargetVelocity(0);
+
+     Thread.sleep(1000);
+       
+   
+
+        //Turn in one direction
+        leftMotors.setTargetVelocity(-1);
         rightMotors.setTargetVelocity(1);
        
         

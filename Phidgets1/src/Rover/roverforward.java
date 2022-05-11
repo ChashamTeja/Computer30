@@ -17,25 +17,176 @@ public class roverforward {
         rightMotors.setChannel(1);
 
         //Open
-        leftMotors.open(5000);
-        rightMotors.open(5000);
+        leftMotors.open(1000);
+        rightMotors.open(1000);
 
         //Move forward at full speed
         leftMotors.setTargetVelocity(1);
-        rightMotors.setTargetVelocity(1);
-
-        //Wait for 1 second
-        Thread.sleep(1000);
-
-        //Reverse at full speed
-        leftMotors.setTargetVelocity(-1);
         rightMotors.setTargetVelocity(-1);
+        
+        
 
         //Wait for 1 second
-        Thread.sleep(1000);
-
-        //Stop motors
+        Thread.sleep(1800);//gggggg
+        
+        
+        
+      
         leftMotors.setTargetVelocity(0);
         rightMotors.setTargetVelocity(0);
+        
+        
+
+        //Wait for 1 second
+        Thread.sleep(1000);
+        
+        
+        
+        leftMotors.setTargetVelocity(1);
+        rightMotors.setTargetVelocity(1);
+        
+        
+
+        
+        Thread.sleep(650);//jjjjjjj
+        
+        
+        
+        leftMotors.setTargetVelocity(0);
+        rightMotors.setTargetVelocity(0);
+        
+        
+
+        //Wait for 1 second
+        Thread.sleep(1000);
+        
+      //Move forward at full speed
+        leftMotors.setTargetVelocity(1);
+        rightMotors.setTargetVelocity(-1);
+        
+        
+
+        //Wait for 1 second
+        Thread.sleep(1800);
+        
+        
+        
+      
+        leftMotors.setTargetVelocity(0);
+        rightMotors.setTargetVelocity(0);
+        
+        
+
+        //Wait for 1 second
+        Thread.sleep(1000);
+        
+        
+        
+        leftMotors.setTargetVelocity(1);
+        rightMotors.setTargetVelocity(1);
+        
+        
+
+        
+        Thread.sleep(660);
+        
+        
+        
+        leftMotors.setTargetVelocity(0);
+        rightMotors.setTargetVelocity(0);
+        
+        
+
+        //Wait for 1 second
+        Thread.sleep(1000);
+        
+        leftMotors.setTargetVelocity(1);
+        rightMotors.setTargetVelocity(-1);
+        
+        
+      //Move forward at full speed
+        leftMotors.setTargetVelocity(1);
+        rightMotors.setTargetVelocity(-1);
+        
+        
+
+        //Wait for 1 second
+        Thread.sleep(1830);
+        
+        
+        
+      
+        leftMotors.setTargetVelocity(0);
+        rightMotors.setTargetVelocity(0);
+        
+        
+
+        //Wait for 1 second
+        Thread.sleep(1000);
+        
+        leftMotors.setTargetVelocity(1);
+        rightMotors.setTargetVelocity(1);
+        
+        
+
+        
+        Thread.sleep(650);
+        
+        
+        
+        leftMotors.setTargetVelocity(0);
+        rightMotors.setTargetVelocity(0);
+        
+        
+
+        //Wait for 1 second
+        Thread.sleep(1000);
+        
+        
+      //Move forward at full speed
+        leftMotors.setTargetVelocity(1);
+        rightMotors.setTargetVelocity(-1);
+        
+        
+
+        //Wait for 1 second
+        Thread.sleep(1830);
+        
+        
+        
+      
+        leftMotors.setTargetVelocity(0);
+        rightMotors.setTargetVelocity(0);
+        
+        
+
+        //Wait for 1 second
+        Thread.sleep(1000);
+       
+        
+        
+        leftMotors.setTargetVelocity(1);
+        rightMotors.setTargetVelocity(1);
+        
+        
+
+        
+        Thread.sleep(1785);
+        
+        ,
+        
+        leftMotors.setTargetVelocity(0);
+        rightMotors.setTargetVelocity(0);
+        
+        
+
+        //Wait for 1 second
+        Thread.sleep(1000);
+        
+        
+
+        
+      
+       
     }
 }
