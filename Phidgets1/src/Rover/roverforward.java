@@ -27,7 +27,7 @@ public class roverforward {
         
 
         //Wait for 1 second
-        Thread.sleep(1800);//gggggg
+        Thread.sleep(1700);//gggggg
         
         
         
@@ -48,7 +48,7 @@ public class roverforward {
         
 
         
-        Thread.sleep(650);//jjjjjjj
+        Thread.sleep(590);//jjjjjjj
         
         
         
@@ -59,6 +59,8 @@ public class roverforward {
 
         //Wait for 1 second
         Thread.sleep(1000);
+        
+     
         
       //Move forward at full speed
         leftMotors.setTargetVelocity(1);
@@ -67,7 +69,7 @@ public class roverforward {
         
 
         //Wait for 1 second
-        Thread.sleep(1800);
+        Thread.sleep(1600);//gggggg
         
         
         
@@ -88,7 +90,7 @@ public class roverforward {
         
 
         
-        Thread.sleep(660);
+        Thread.sleep(600);//jjjjjjj
         
         
         
@@ -100,9 +102,7 @@ public class roverforward {
         //Wait for 1 second
         Thread.sleep(1000);
         
-        leftMotors.setTargetVelocity(1);
-        rightMotors.setTargetVelocity(-1);
-        
+
         
       //Move forward at full speed
         leftMotors.setTargetVelocity(1);
@@ -111,7 +111,7 @@ public class roverforward {
         
 
         //Wait for 1 second
-        Thread.sleep(1830);
+        Thread.sleep(1600);//gggggg
         
         
         
@@ -124,13 +124,15 @@ public class roverforward {
         //Wait for 1 second
         Thread.sleep(1000);
         
+        
+        
         leftMotors.setTargetVelocity(1);
         rightMotors.setTargetVelocity(1);
         
         
 
         
-        Thread.sleep(650);
+        Thread.sleep(590);//jjjjjjj
         
         
         
@@ -143,14 +145,15 @@ public class roverforward {
         Thread.sleep(1000);
         
         
-      //Move forward at full speed
+        
+        //Move forward at full speed
         leftMotors.setTargetVelocity(1);
         rightMotors.setTargetVelocity(-1);
         
         
 
         //Wait for 1 second
-        Thread.sleep(1830);
+        Thread.sleep(1650);//gggggg
         
         
         
@@ -162,7 +165,7 @@ public class roverforward {
 
         //Wait for 1 second
         Thread.sleep(1000);
-       
+        
         
         
         leftMotors.setTargetVelocity(1);
@@ -171,7 +174,7 @@ public class roverforward {
         
 
         
-        Thread.sleep(1785);
+        Thread.sleep(2000);//jjjjjjj
         
         
         
@@ -182,7 +185,6 @@ public class roverforward {
 
         //Wait for 1 second
         Thread.sleep(1000);
-        
         
 
         
