@@ -17,17 +17,17 @@ public class roverspin {
         rightMotors.setChannel(1);
 
         //Open
-        leftMotors.open(8000);
-        rightMotors.open(8000);
+        leftMotors.open(5000);
+        rightMotors.open(5000);
        
         Thread.sleep(1000);
         
         
         //Turn in one direction
         leftMotors.setTargetVelocity(1);
-        rightMotors.setTargetVelocity(-1);
+        rightMotors.setTargetVelocity(1);
         
-        
+        Thread.sleep(2000);
         //Turn in one direction
         leftMotors.setTargetVelocity(0);
         rightMotors.setTargetVelocity(0);
@@ -36,10 +36,6 @@ public class roverspin {
        
    
 
-        //Turn in one direction
-        leftMotors.setTargetVelocity(-1);
-        rightMotors.setTargetVelocity(1);
-       
         
     }
 }

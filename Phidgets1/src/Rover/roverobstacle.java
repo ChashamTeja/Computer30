@@ -1,4 +1,5 @@
 package Rover;
+
 //Add Phidgets Library
 import com.phidget22.*;
 
@@ -28,16 +29,22 @@ public class roverobstacle {
             
             if (sonar.getDistance() < 200) {
                 //Object detected! Stop motors
+                leftMotors.setTargetVelocity(1);
+                rightMotors.setTargetVelocity(1);
+                
+                Thread.sleep(838);
+                
+                //Object detected! Stop motors
                 leftMotors.setTargetVelocity(0);
                 rightMotors.setTargetVelocity(0);
-            } else {
-                //Move forward slowly (25% max speed)
-                leftMotors.setTargetVelocity(0.25);
-                rightMotors.setTargetVelocity(0.25);
-            }
-
-            //Wait for 250milliseconds
-            Thread.sleep(250);
+                
+                
+                Thread.sleep(1000);
+                
+        
+                
+                
+            } 
         }
     }
 }
