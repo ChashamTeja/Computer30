@@ -29,17 +29,7 @@ public class roverobstacle {
             
             if (sonar.getDistance() < 200) {
                 //Object detected! Stop motors
-                leftMotors.setTargetVelocity(1);
-                rightMotors.setTargetVelocity(1);
                 
-                Thread.sleep(838);
-                
-                //Object detected! Stop motors
-                leftMotors.setTargetVelocity(0);
-                rightMotors.setTargetVelocity(0);
-                
-                
-                Thread.sleep(1000);
                 
         
                 

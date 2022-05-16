@@ -48,7 +48,7 @@ public class roverforward {
         
 
         
-        Thread.sleep(590);//jjjjjjj
+        Thread.sleep(620);//jjjjjjj
         
         
         
@@ -90,7 +90,7 @@ public class roverforward {
         
 
         
-        Thread.sleep(600);//jjjjjjj
+        Thread.sleep(620);//jjjjjjj
         
         
         
@@ -132,7 +132,7 @@ public class roverforward {
         
 
         
-        Thread.sleep(590);//jjjjjjj
+        Thread.sleep(600);//jjjjjjj
         
         
         
@@ -174,7 +174,7 @@ public class roverforward {
         
 
         
-        Thread.sleep(2000);//jjjjjjj
+        Thread.sleep(1800);//jjjjjjj
         
         
         
