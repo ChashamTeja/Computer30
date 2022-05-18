@@ -27,7 +27,7 @@ public class roverobstacle {
 
             System.out.println("Distance: " + sonar.getDistance() + " mm");
             
-            if (sonar.getDistance() < 200) {
+            if (sonar.getDistance() > 200000) {
                 //Object detected! Stop motors
                 
                 
