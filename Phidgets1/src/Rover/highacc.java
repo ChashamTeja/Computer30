@@ -34,14 +34,9 @@ public class highacc {
       rightMotors.setTargetVelocity(-1);
 
       //Wait for 1 second
-      Thread.sleep(3000);
+      Thread.sleep(5000);
 
-      //Reverse at full speed
-      leftMotors.setTargetVelocity(-1);
-      rightMotors.setTargetVelocity(1);
-
-      //Wait for 1 second
-      Thread.sleep(3000);
+    
 
       //Stop motors
       leftMotors.setTargetVelocity(0);
