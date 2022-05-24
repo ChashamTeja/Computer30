@@ -28,14 +28,14 @@ public class roverobstacle {
             System.out.println("Distance: " + sonar.getDistance() + " mm");
             
             if (sonar.getDistance() < 200000) {
-                //Move forward at full speed
+            	 //Move forward at full speed
                 leftMotors.setTargetVelocity(1);
                 rightMotors.setTargetVelocity(-1);
                 
                 
 
                 //Wait for 1 second
-                Thread.sleep(1700);//gggggg
+                Thread.sleep(1650);//gggggg
                 
                 
                 
@@ -56,7 +56,7 @@ public class roverobstacle {
                 
 
                 
-                Thread.sleep(620);//jjjjjjj
+                Thread.sleep(570);//jjjjjjj
                 
                 
                 
@@ -69,15 +69,14 @@ public class roverobstacle {
                 Thread.sleep(1000);
                 
              
-                
-              //Move forward at full speed
+                //Move forward at full speed
                 leftMotors.setTargetVelocity(1);
                 rightMotors.setTargetVelocity(-1);
                 
                 
 
                 //Wait for 1 second
-                Thread.sleep(1800);//gggggg
+                Thread.sleep(1580);//gggggg
                 
                 
                 
@@ -98,7 +97,7 @@ public class roverobstacle {
                 
 
                 
-                Thread.sleep(640);//jjjjjjj
+                Thread.sleep(582);//jjjjjjj
                 
                 
                 
@@ -109,8 +108,6 @@ public class roverobstacle {
 
                 //Wait for 1 second
                 Thread.sleep(1000);
-                
-
                 
               //Move forward at full speed
                 leftMotors.setTargetVelocity(1);
@@ -140,7 +137,7 @@ public class roverobstacle {
                 
 
                 
-                Thread.sleep(620);//jjjjjjj
+                Thread.sleep(562);//jjjjjjj
                 
                 
                 
@@ -182,7 +179,7 @@ public class roverobstacle {
                 
 
                 
-                Thread.sleep(1850);
+                Thread.sleep(1700);
                 
                 
                 
@@ -193,6 +190,7 @@ public class roverobstacle {
 
                 //Wait for 1 second
                 Thread.sleep(1000);
+                
                 
             }
             
