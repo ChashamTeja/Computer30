@@ -1,3 +1,19 @@
+/*
+Program: squares.java          Last Date of this Revision: April 30 , 2022
+
+
+
+
+Purpose: Create a Squares application that stores the square of an element’s index in an integer array of 5 elements.
+For example, the third element, which has index 2, should store 4. The application should then display the
+value of each element in the array.
+
+Author: Chashampreet Teja, 
+School: CHHS
+Course: Computer Programming 30
+ 
+*/
+
 public class Squares {
 
     public static void main(String[] args) {

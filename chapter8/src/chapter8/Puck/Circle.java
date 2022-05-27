@@ -3,6 +3,7 @@ Program: circle.java          Last Date of this Revision: March 5 , 2022
 
 
 
+
 Purpose: Create a Puck class that inherits the Disk class. The Puck class should include member variables weight,
 standard, and youth. The standard and youth variables should be boolean variables that are set to either true
 or false depending on the weight of the puck. A s 

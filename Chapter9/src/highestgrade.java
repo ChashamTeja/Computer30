@@ -1,3 +1,18 @@
+/*
+Program: HighestGrade.java          Last Date of this Revision: May 2 , 2022
+
+
+
+
+Purpose: Create a HighestGrade application that prompts the user for five grades between 0 and 100 points and stores
+the grades in an ArrayList. HighestGrade then traverses the grades to determine the highest grade and then
+displays the grade along with an appropriate message
+
+Author: Chashampreet Teja, 
+School: CHHS
+Course: Computer Programming 30
+ 
+*/
 import java.util.ArrayList;
 import java.util.Scanner;
 
