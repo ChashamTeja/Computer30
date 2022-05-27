@@ -27,197 +27,33 @@ public class roverobstacle {
 
             System.out.println("Distance: " + sonar.getDistance() + " mm");
             
-            if (sonar.getDistance() < 200000) {
-            	 //Move forward at full speed
-                leftMotors.setTargetVelocity(1);
-                rightMotors.setTargetVelocity(-1);
-                
-                
-
-                //Wait for 1 second
-                Thread.sleep(1650);//gggggg
-                
-                
-                
-              
-                leftMotors.setTargetVelocity(0);
-                rightMotors.setTargetVelocity(0);
-                
-                
-
-                //Wait for 1 second
-                Thread.sleep(1000);
-                
-                
-                
-                leftMotors.setTargetVelocity(1);
-                rightMotors.setTargetVelocity(1);
-                
-                
-
-                
-                Thread.sleep(570);//jjjjjjj
-                
-                
-                
-                leftMotors.setTargetVelocity(0);
-                rightMotors.setTargetVelocity(0);
-                
-                
-
-                //Wait for 1 second
-                Thread.sleep(1000);
-                
+            if (sonar.getDistance() < 300 ) {
+           	
+            	
+            	leftMotors.setTargetVelocity(1);
+             rightMotors.setTargetVelocity(1);
              
-                //Move forward at full speed
-                leftMotors.setTargetVelocity(1);
-                rightMotors.setTargetVelocity(-1);
-                
-                
+             
 
-                //Wait for 1 second
-                Thread.sleep(1580);//gggggg
-                
-                
-                
-              
-                leftMotors.setTargetVelocity(0);
-                rightMotors.setTargetVelocity(0);
-                
-                
+             
+             Thread.sleep(800);
+             
+             
+          	
+         	leftMotors.setTargetVelocity(0);
+          rightMotors.setTargetVelocity(0);
+          
+          
 
-                //Wait for 1 second
-                Thread.sleep(1000);
-                
-                
-                
-                leftMotors.setTargetVelocity(1);
-                rightMotors.setTargetVelocity(1);
-                
-                
-
-                
-                Thread.sleep(582);//jjjjjjj
-                
-                
-                
-                leftMotors.setTargetVelocity(0);
-                rightMotors.setTargetVelocity(0);
-                
-                
-
-                //Wait for 1 second
-                Thread.sleep(1000);
-                
-              //Move forward at full speed
-                leftMotors.setTargetVelocity(1);
-                rightMotors.setTargetVelocity(-1);
-                
-                
-
-                //Wait for 1 second
-                Thread.sleep(1600);//gggggg
-                
-                
-                
-              
-                leftMotors.setTargetVelocity(0);
-                rightMotors.setTargetVelocity(0);
-                
-                
-
-                //Wait for 1 second
-                Thread.sleep(1000);
-                
-                
-                
-                leftMotors.setTargetVelocity(1);
-                rightMotors.setTargetVelocity(1);
-                
-                
-
-                
-                Thread.sleep(562);//jjjjjjj
-                
-                
-                
-                leftMotors.setTargetVelocity(0);
-                rightMotors.setTargetVelocity(0);
-                
-                
-
-                //Wait for 1 second
-                Thread.sleep(1000);
-                
-                
-                
-                //Move forward at full speed
-                leftMotors.setTargetVelocity(1);
-                rightMotors.setTargetVelocity(-1);
-                
-                
-
-                //Wait for 1 second
-                Thread.sleep(1650);//gggggg
-                
-                
-                
-              
-                leftMotors.setTargetVelocity(0);
-                rightMotors.setTargetVelocity(0);
-                
-                
-
-                //Wait for 1 second
-                Thread.sleep(1000);
-                
-                
-                
-                leftMotors.setTargetVelocity(1);
-                rightMotors.setTargetVelocity(1);
-                
-                
-
-                
-                Thread.sleep(1700);
-                
-                
-                
-                leftMotors.setTargetVelocity(0);
-                rightMotors.setTargetVelocity(0);
-                
-                
-
-                //Wait for 1 second
-                Thread.sleep(1000);
-                
+          
+          Thread.sleep(5000);
+             
                 
             }
             
 
            
-                if (sonar.getDistance() < 200) {
-                	
-                	
-                	 leftMotors.setTargetVelocity(1);
-                     rightMotors.setTargetVelocity(1);
-                     
-                     
-
-                     
-                     Thread.sleep(1000);
-                     
-                     
-                     leftMotors.setTargetVelocity(0);
-                     rightMotors.setTargetVelocity(0);
-                     
-                     
-
-                     //Wait for 1 second
-                     Thread.sleep(1000);
-                
-                	
-                }
+              
              
         
         }
