@@ -1,3 +1,17 @@
+/*
+Program: roverobstacle.java          Last Date of this Revision: june 2 , 2022
+
+
+
+
+Purpose: Make the rover spinning   for 5 sec
+
+Author: Chashampreet Teja, 
+School: CHHS
+Course: Computer Programming 30
+ 
+*/
+
 package Rover;
 //Add Phidgets Library
 import com.phidget22.*;
@@ -27,7 +41,7 @@ public class roverspin {
         leftMotors.setTargetVelocity(1);
         rightMotors.setTargetVelocity(1);
         
-        Thread.sleep(2000);
+        Thread.sleep(5000);
         //Turn in one direction
         leftMotors.setTargetVelocity(0);
         rightMotors.setTargetVelocity(0);

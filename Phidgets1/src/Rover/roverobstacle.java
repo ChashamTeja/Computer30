@@ -1,3 +1,16 @@
+/*
+Program: roverobstacle.java          Last Date of this Revision: May 2 , 2022
+
+
+
+
+Purpose: Make the rover turn 180 when an obstacle is close by
+
+Author: Chashampreet Teja, 
+School: CHHS
+Course: Computer Programming 30
+ 
+*/
 package Rover;
 
 //Add Phidgets Library

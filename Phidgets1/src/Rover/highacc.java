@@ -1,3 +1,17 @@
+/*
+Program: highacc .java          Last Date of this Revision: May 30 , 2022
+
+
+
+
+Purpose: Make the rover move in higher acceleration 
+
+Author: Chashampreet Teja, 
+School: CHHS
+Course: Computer Programming 30
+ 
+*/
+
 package Rover;
 
 
@@ -34,7 +48,16 @@ public class highacc {
       rightMotors.setTargetVelocity(-1);
 
       //Wait for 1 second
-      Thread.sleep(5000);
+      Thread.sleep(2000);
+     
+      
+      
+      //Move forward at full speed
+      leftMotors.setTargetVelocity(-1);
+      rightMotors.setTargetVelocity(1);
+
+      //Wait for 1 second
+      Thread.sleep(2000);
 
     
 

@@ -1,3 +1,17 @@
+/*
+Program: rover course .java          Last Date of this Revision: May 30 , 2022
+
+
+
+
+Purpose: Create a square 1m x 1m (3' x 3') in your classroom out of tape.
+Create a program that moves your rover around the square of tape. 
+
+Author: Chashampreet Teja, 
+School: CHHS
+Course: Computer Programming 30
+ 
+*/
 package Rover;
 //Add Phidgets Library
 import com.phidget22.*;
