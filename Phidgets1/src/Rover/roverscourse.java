@@ -2,7 +2,7 @@ package Rover;
 //Add Phidgets Library
 import com.phidget22.*;
 
-public class roverforward {
+public class roverscourse {
     public static void main(String[] args) throws Exception {
 
         //Connect to wireless rover
@@ -48,7 +48,7 @@ public class roverforward {
         
 
         
-        Thread.sleep(570);//jjjjjjj
+        Thread.sleep(590);//jjjjjjj
         
         
         
@@ -89,7 +89,7 @@ public class roverforward {
         
 
         
-        Thread.sleep(582);//jjjjjjj
+        Thread.sleep(610);//jjjjjjj
         
         
         
@@ -108,7 +108,7 @@ public class roverforward {
         
 
         //Wait for 1 second
-        Thread.sleep(1600);//gggggg
+        Thread.sleep(1620);//gggggg
         
         
         
@@ -129,7 +129,7 @@ public class roverforward {
         
 
         
-        Thread.sleep(562);//jjjjjjj
+        Thread.sleep(590);//jjjjjjj
         
         
         
@@ -150,7 +150,7 @@ public class roverforward {
         
 
         //Wait for 1 second
-        Thread.sleep(1650);//gggggg
+        Thread.sleep(1640);//gggggg
         
         
         
